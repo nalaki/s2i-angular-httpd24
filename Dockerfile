@@ -54,7 +54,7 @@ RUN yum install -y --setopt=tsflags=nodocs yum-config-manager centos-release-scl
     yum install -y --setopt=tsflags=nodocs rh-nodejs8 rh-nodejs8-npm git && \
     rpm -V rh-nodejs8 rh-nodejs8-npm git && \
     yum clean all -y
-
+RUN npm install json-server -g
 # This default user is created in the base image
 USER 1001
 
