@@ -29,8 +29,8 @@ fi
 
 # The base image already copied the source files the home directory,
 # so we can skip that step
-echo "---> Installing the NPM json dependencies"
-scl enable rh-nodejs8 'npm install -g @angular/cli'
+echo "---> Installing the NPM rxjs dependencies"
+scl enable rh-nodejs8 'npm install --save rxjs-compat'
 echo "---> Installing the NPM json dependencies"
 scl enable rh-nodejs8 'npm install json-server -g'
 echo "---> Installing the NPM dependencies (including dev)"
